@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input" id="searchInput">
+                <button class="search-btn" onclick="searchVideos()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="header-btn">
+                <i class="fas fa-video"></i>
+            </button>
+            <button class="header-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+            <div class="user-avatar">
+                <img src="https://via.placeholder.com/32" alt="User">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-compass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-play"></i>
+                    <span>Shorts</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-folder"></i>
+                    <span>Subscriptions</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-book"></i>
+                    <span>Library</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-history"></i>
+                    <span>History</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-clock"></i>
+                    <span>Watch Later</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span>Liked Videos</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="category-tab active">All</button>
+                <button class="category-tab">Source code</button>
+                <button class="category-tab">Software Engineering</button>
+                <button class="category-tab">Linux</button>
+                <button class="category-tab">AI</button>
+                <button class="category-tab">Security hackers</button>
+                <button class="category-tab">Desktop computers</button>
+                <button class="category-tab">Gaming</button>
+                <button class="category-tab">Music</button>
+                <button class="category-tab">DevOps</button>
+                <button class="category-tab">Tamil Cinema</button>
+                <button class="category-tab">Live</button>
+                <button class="category-tab">Trailers</button>
+            </div>
+            
+            <!-- Video Grid -->
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">6:13:23</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR2d8RFmVF-L-ONZ0J8BasY5ODj1VDz7STGdIoH=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">HTML & CSS Full Course - Beginner to Pro</h3>
+                            <p class="channel-name">SuperSimpleDev</p>
+                            <p class="video-stats">18M views • 4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/Rp4wnNT4taQ/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">2:23</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLTOQmGxkOqWj8zpbGgy7poT2tYajAWZKqmMNeKK=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Prathichaya Trailer | Nivin Pauly| Sharaf U Dheen| Balachandra Menon| Unnikrishnan Bhagavathar</h3>
+                            <p class="channel-name">Sree Gokulam Movies</p>
+                            <p class="video-stats">3.2M views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/28VVnYqBpGI/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">10:20</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSUgq6pFKvP1F1DsIgR8gNkKXrZNnZsLTK2p1QF=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">How to install Linux (Ubuntu) & Remove Windows</h3>
+                            <p class="channel-name">NH Soft</p>
+                            <p class="video-stats">500K views • 2 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/PkZNo7MFNFg/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">11:44:47</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRnV1L4qU3pKZL8sEOREpqZM3sfL2hm8YgkXFKa=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">LEARN WEB DEVELOPMENT 2026 - 20 PROJECTS!</h3>
+                            <p class="channel-name">Code With Harry</p>
+                            <p class="video-stats">2.5M views • 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/RGNjO7zGON4/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">8:05</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLS4VDY7G8HBQgC5A8EoznkQ6LtY2opgk4RP2PLw=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">TRYING TO HACK THE HACKER</h3>
+                            <p class="channel-name">NetworkChuck</p>
+                            <p class="video-stats">1.2M views • 3 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/QHnCoMha8o4/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">3:33</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLT3X_xH2F3yGnIV7lXzLB8BLQKL2FVDT1XgH2Nv=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">How To Create QR Code Generator</h3>
+                            <p class="channel-name">Web Dev Simplified</p>
+                            <p class="video-stats">890K views • 2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 7 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/0HcTHdmmumc/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">45:30</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR7V2qG3U3wDzm6JzwQMxILX8j-7gYBwE4FrOmY=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Complete Node.js Tutorial for Beginners</h3>
+                            <p class="channel-name">Programming with Mosh</p>
+                            <p class="video-stats">3.4M views • 8 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 8 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://i.ytimg.com/vi/W6NZfCO5SIk/hqdefault.jpg" alt="Video thumbnail">
+                        <span class="video-duration">2:15:30</span>
+                    </div>
+                    <div class="video-details">
+                        <div class="channel-avatar">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLTq6KmIpMbZg_fkF8vY_7144vYsKvIDO5X8tZrM=s68-c-k-c0x00ffffff-no-rj" alt="Channel">
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">React Course - Beginner's Tutorial for React JavaScript Library [2022]</h3>
+                            <p class="channel-name">freeCodeCamp.org</p>
+                            <p class="video-stats">5.2M views • 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
